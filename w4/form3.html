@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 만들기 3</title>
+</head>
+<body>
+    <form method="post" autocomplete="off">
+        <!-- checkbox, radio 버튼 -->
+        좋아하는 음식 선택<br>
+        <!-- name : 같은 그룹, value : DB에 실제로 넘어가는 값 -->
+        <input type="checkbox" name="food" value="f1">삼겹살
+        <input type="checkbox" name="food" value="f2">라면
+        <input type="checkbox" name="food" value="f3">피자
+        <br>
+        성별 선택<br>
+        <input type="radio" name="gender" value="male">남자
+        <input type="radio" name="gender" value="female">여자
+        <br>
+        <hr width="30%" align="left">
+        <!-- &nbsp : 스페이스 1칸의 효과 -->
+        <input type="submit" value="제출"> &nbsp;&nbsp;&nbsp;
+        <input type="reset" value="취소"> &nbsp;&nbsp;&nbsp;
+        <input type="button" value="버튼">
+        <br>
+        버튼을 클릭해 보세요<br>
+        <input type="image" src="../image/btn.png" width="80"><br>
+        <br>
+        <!-- select 태그 -->
+        <!-- option에 value값 넣어서 작성하는걸 습관화 시키기 -->
+        <select>
+            <option value="김밥">김밥</option>
+            <option value="떡볶이">떡볶이</option>
+            <option value="순대">순대</option>
+            <option value="어묵">어묵</option>
+        </select>
+        <br>
+        <!-- multiple 속성 -->
+        <select multiple>
+            <option value="콜라">콜라</option>
+            <option value="사이다">사이다</option>
+            <option value="아이스커피">아이스커피</option>
+            <option value="쥬스">쥬스</option>
+        </select>
+        <br>
+        <!-- optgroup 태그 -->
+        <select>
+            <!-- label값은 선택되지 않는다. -->
+            <optgroup label="HTML5">
+                <option value="Multimedia Tag">Multimedia Tag</option>
+                <option value="Connectivity">Connectivity</option>
+                <option value="Device Access">Device Access</option>
+            </optgroup>
+            <optgroup label="CSS3">
+                <option value="Animation">Animation</option>
+                <option value="3D Transform">3D Transform</option>
+            </optgroup>
+        </select>
+        <hr width="30%" align="left">
+        <!-- fieldset, legend 태그 -->
+        <fieldset>
+            <legend>입력 양식</legend>
+            <table>
+                <tr>
+                    <!-- for값과 id값은 같게 -->
+                    <td><label for="name">이름</label></td>
+                    <td><input type="text" id="name" name="id"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">이메일</label></td>
+                    <td><input type="email" name="email" id="mail" placeholder="id@host"></td>
+                </tr>
+            </table>
+            <td colspan="2" align="center">
+                <input type="submit" value="제출">
+            </td>
+        </fieldset>
+    </form>
+</body>
+</html>

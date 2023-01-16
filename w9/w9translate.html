@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w9translate</title>
+    <style>
+        @import url(transtyle.css);
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- 이동 -->
+        <div class="con">
+            <div class="origin">
+                <div id="movex">translate</div>
+            </div>
+            <div class="origin">
+                <div id="movey"></div>
+            </div>
+            <div class="origin">
+                <div id="movexy"></div>
+            </div>
+        </div>
+        <!-- 확대, 축소 -->
+        <div class="con">
+            <div class="origin">
+                <div id="scalex">scale</div>
+            </div>
+            <div class="origin">
+                <div id="scaley"></div>
+            </div>
+            <div class="origin">
+                <div id="scale"></div>
+            </div>
+        </div>
+        <!-- 회전 -->
+        <p>Rotate</p>
+        <div class="con">
+            <!-- 2차원 회전 -->
+            <div class="origin" id="rotate1">
+                <img src="image/tree.jpg" alt="">
+            </div>
+            <div class="origin" id="rotate2">
+                <img src="image/tree.jpg" alt="">
+            </div>
+            <!-- 3차원 회전, perspective 속성 유무 비교 -->
+            <div class="origin">
+                <div class="rotatex">
+                    <img src="image/sunset.jpg" alt="">
+                </div>
+            </div>
+            <!-- perspective속성은 부모 div속성에 줘야함 -->
+            <div class="origin pers">
+                <div class="rotatex">
+                    <img src="image/sunset.jpg" alt="">
+                </div>
+            </div>
+            <!-- 3차원 회전 -->
+            <div class="origin pers">
+                <div id="rotatex">rotate3D</div>
+            </div>
+            <div class="origin pers">
+                <div id="rotatey"></div>
+            </div>
+            <div class="origin pers">
+                <div id="rotatez"></div>
+            </div>
+            <div class="origin pers">
+                <div id="rotatexyz"></div>
+            </div>
+        </div>
+        <!-- 왜곡 -->
+        <div class="con">
+            <div class="origin">
+                <div id="skewx">scale</div>
+            </div>
+            <div class="origin">
+                <div id="skewy"></div>
+            </div>
+            <div class="origin">
+                <div id="skewxy"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

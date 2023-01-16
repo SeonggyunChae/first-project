@@ -1,0 +1,58 @@
+* { 
+	margin: 0; 	padding: 0; 
+    font-family: '맑은 고딕','Malgun Gothic', Gothic, sans-serif;
+}
+li{ list-style: none; }
+a{
+    text-decoration: none;
+    color: black;
+}
+img{ border: 0; }
+/* body 스타일 지정 */
+
+/* header 스타일 지정 */
+
+
+/* 본문 영역 */
+
+
+/* section 영역 위치 */
+
+/* nav 영역 위치 */
+
+
+/* article 영역 및 내용 스타일 */
+article { 
+    margin: 10px 0; 
+    padding-left: 10px;
+}
+
+/* article 제목 및 본문 스타일 */
+
+
+
+
+
+/* nav 내용 스타일  */
+.navlist{
+    padding: 20px 0 20px 10px;
+}
+.navlist > h3 { font-size: 17px;}
+.navlist a:hover{
+    text-decoration: underline;
+    color: darkgrey;
+    font-style: italic;
+}
+.navlist li a{
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 10px 0px;
+    border-top: 1px solid #1245AB;
+    border-bottom: 5px solid #1245AB;
+
+}

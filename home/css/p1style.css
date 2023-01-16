@@ -1,0 +1,251 @@
+/* 스타일 초기화 */
+/* 브라우저마다 다른 기본 스타일을 강제 지정함 */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: '맑은 고딕', 'Malgun Gothic', Gothic, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+hr{
+    background-color: rgb(59, 47, 32);
+}
+p{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* header */
+body{
+    width: 960px;
+    /* background-color: #f6f6f6; */
+    background-color: rgb(236, 193, 0);
+    margin: 0 auto;
+}
+#pagewrapper{
+    /* background-color: white; */
+    background-color: rgb(228, 200, 152);
+    margin: 40px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(192, 192, 192, 0.3);
+    border: 3px solid rgb(59, 47, 32);
+}
+#mainheader{
+    padding: 40px 50px;
+    position: relative;
+}
+#mainheader > img{
+    border: 0;
+    float: left;
+}
+.mastertitle{
+    font-size: 30px;
+    color: #181818;
+}
+.masterdesc{
+    font-size: 15px;
+    color: 383838;
+}
+
+/* nav(menu) */
+.pullleft{
+    float: left;
+}
+/* .pullright{
+    float: right;
+} */
+#mainnavi{
+    border-top: 1px #c8c8c8 실선;
+    border-bottom: 1px #c8c8c8 실선;
+    margin-bottom: 20px;
+    height: 40px;
+}
+.menuitem{
+    float: left;
+    position: relative;
+}
+.menuitem:hover{
+    /* background-color: #585858; */
+    background-color: rgb(236, 193, 0);
+    color: white;
+}
+.menutitle{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 20px;
+    font-family: 'Bowlby One', cursive;
+    text-shadow: 2px 2px white;
+    color: rgb(59, 47, 32);
+    letter-spacing: 0.15em;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
+    z-index: 100;
+    text-align: center;
+}
+.submenu > a{
+    display: block;
+    padding: 5px 10px;
+    color: black;
+}
+.submenu > a:hover{
+    background-color: 636262;
+    color: white;
+}
+.menuitem:hover ul.submenu{
+    display: block;
+}
+
+/* 본문 */
+#content{
+    overflow: hidden;
+}
+#mainsection{
+    float: left;
+    width: 710px;
+}
+article{
+    padding: 0 10px 20px 10px;
+    border-bottom: 2px rgb(59, 47, 32) solid;
+    text-align: center;
+}
+article:last-child{
+    border: none;
+}
+.aarticleheader{
+    padding: 20px 0;
+}
+.articletitle{
+    font-size: 50px;
+    padding-bottom: 10px;
+    font-family: 'Bowlby One', cursive;
+    text-shadow: 2px 2px white;
+    color: rgb(59, 47, 32);
+    letter-spacing: 0.15em;
+}
+/* .articlesource{
+    font-size: 12px;
+} */
+.articlebody{
+    font-size: 16px;
+    overflow: hidden;
+}
+.mainimg{
+    height: 300px;
+    transition: 0.5s;
+}
+.mainimg:hover{
+    transform: scale(1.2);
+}
+
+/* 사이드 메뉴 */
+#mainside > div{
+    height: 300px;
+}
+.asidelist{
+    padding: 10px 0 30px 0;
+}
+.asidelist > h3{
+    font-size: 15px;
+}
+.asidelist li a{
+    margin-left: 8px;
+    font-size: 13px;
+    color: #6c6c6c;
+}
+td{
+    text-align: center;
+    font-size: smaller;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+td > img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* footer */
+footer{
+    border-top: 1px rgb(59, 47, 32) solid;
+    padding-top: 10px;
+    text-align: center;
+}
+footer > a{
+    color: rgb(112, 112, 112);
+}
+
+/* top 단추 */
+#top{
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    cursor: pointer;
+}
+#top > img{
+    width: 32px;
+    height: 36px;
+}
+
+/* background */
+.bgimg{
+    height: 600px;
+    position: fixed;
+    bottom: 150px;
+    left: 80px;
+    filter: drop-shadow(5px 5px rgb(59, 47, 32));
+}
+.bgtextbox{
+    position: fixed;
+    bottom: 100px;
+    right: -300px;
+}
+.bgtext{
+    font-family: 'Bowlby One', cursive;
+    text-shadow: 5px 5px white;
+    color: rgb(59, 47, 32);
+    letter-spacing: 0.15em;
+    font-size: 80px;
+}
+#t1{
+    animation: bgtextani 8s infinite;
+}
+#t2{
+    animation: bgtextani 8s 0.2s infinite;
+}
+#t3{
+    animation: bgtextani 8s 0.4s infinite;
+}
+#t4{
+    animation: bgtextani 8s 0.6s infinite;
+}
+#t5{
+    animation: bgtextani 8s 0.8s infinite;
+}
+#t6{
+    animation: bgtextani 8s 1s infinite;
+}
+@keyframes bgtextani{
+    20%{
+        transform: translateX(-350px);
+    }
+    80%{
+        transform: translateX(350px);
+    }
+}

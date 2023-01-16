@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17110097_p2</title>
+    <link rel="stylesheet" href="css/p2style.css">
+    <script src="js/p2script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="product">
+            <img src="image/ct1.png" alt="텀블러" id="bottle" width="330" height="330">
+            <div id="smallbot">
+                <img src="image/ct1.png" class="smallpic">
+                <img src="image/ct2.png" class="smallpic">
+                <img src="image/ct3.png" class="smallpic">
+            </div>
+        </div>
+        <div id="description">
+            <h3>고양이 원목 캣폴 캣타워</h3>
+            <p>89,000원</p>
+            <hr>
+            <p>
+                <b>배송비</b><br>
+                15,000원(제주, 도서지역 추가 15,000원)
+            </p>
+            <p>
+                <b>배송예정</b><br>
+                주문 순서대로 배송,<br>
+                출고문자 전송 후 영업일 기준 1~2일 내로 배송이 완료됩니다.
+            </p>
+            <form method="post" autocomplete="off">
+                <select id="ct_height">
+                    <option value="" selected disabled hidden>천장 높이</option>
+                    <option value="high">240cm이상</option>
+                    <option value="low">240cm이하</option>
+                </select>
+                <select id="ct_color">
+                    <option value="" selected disabled hidden>색상</option>
+                    <option value="gray">그레이</option>
+                    <option value="brown">브라운</option>
+                    <option value="darkgray">다크그레이</option>
+                </select>
+                <button id="ct_btn">구매하기</button>
+            </form>
+        </div>
+        <br><br><br>
+        <div id="content">
+            <p>
+                고양이들이 기둥도 못타는 제품을 언제부터 캣폴이라 했나요?<br>
+                고양이는 기둥을 타고 오르는 본능을 가진 수직 동물 입니다.
+            </p>
+            <button id="open" class="over" onclick="showDetail()">상세 설명 보기 ∨</button>
+            <div id="desc" class="detail">
+                <!-- 내용 -->
+                다양한 모양으로 커스터마이징이 가능합니다. <br>
+                원하시는 모양과 색상으로 설치하세요! <br><br>
+                <b>서비스</b> <br>
+                01. 업계 유일 평생 무상 A/S, 이사시 무상 천장봉 교환, 빠르고 완벽한 사후처리 <br>
+                - 목봉/알류미늄봉 평생 무상 A/S. 한번 구매하시면 평생을 책임집니다. <br>
+                - 높이 부분 변경 시에도 기간 횟수 제한 없이 평생 무상 교환 <br><br>
+                02. 말로만 친환경자재?? NO! 인증받은 친환경 자재! <br>
+                - 민감한 고양이들을 위해 유아용 가구 등에 사용되는 친환경 자재만 사용. <br>
+                - 폼알데히드 방출양 0.1mg/L 이하의 친환경 SE-등급의 자재만 사용. <br><br>
+                03. UV코팅 <br>
+                - 기둥 및 가공면 제외 모든 옵션 UV코팅 <br><br>
+                04. 카페트 소재 <br>
+                - 기둥에 스크래쳐는 캣폴의 필수입니다! 기둥 스크래쳐가 없으면 반쪽짜리 캣폴일뿐! <br>
+                - 먼지 날림 걱정 없는 고품질 최고급 국내산 스완카페트 <br><br>
+                05. 안전을 위한 넓은 지지대 <br>
+                - 캣폴의 안정성을 위한 넓은 하단 지지대 <br>
+                - 3M 실리콘 미끄럼 방지 스티커
+                <br><br>
+                <button id="close" onclick="hideDetail()">상세 설명 닫기 ∧</button>
+                <br><br><br><br>
+            </div>
+        </div>
+    </div>
+    <script src="js/p1script.js"></script>
+</body>
+</html>

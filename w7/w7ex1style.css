@@ -1,0 +1,23 @@
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+div{
+    width: 400px;
+    height: 600px;
+    border: solid 1px black;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+p{
+    padding: 20px 75px 0px 75px;
+    text-align: center;
+}
+
+.img{
+    border-radius: 20px;
+    width: 200px;
+    height: 230px;
+    margin-left: 100px;
+}

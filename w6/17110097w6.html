@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w6</title>
+    <style>
+        /* 가시 속성 */
+        /* display 속성 */
+        /* #box{
+            display: none;
+        } */
+        /* #box{
+            display: block;
+        } */
+        /* #box{
+            display: inline;
+        } */
+        /* #box{
+            display: inline-block;
+        } */
+        #box{
+            /* display: inline; */
+            display: inline-block;
+            background-color: red;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        /* 글자 속성 */
+        /* 기본글자크기 : 16px, 12pt, 1em, 100%, h4, medium */
+        .a{
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+        .b{
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* 없는 글꼴이라 2번째로 작성한 글꼴이 적용이 된다. */
+        .c{
+            font-size: xx-small;
+            font-family: '없는 글꼴', sans-serif;
+        }
+        .d{
+            font-size: 20px;
+            font-family: '없는 글꼴', serif;
+        }
+        .e{
+            font-size: larger;
+            font-family: 'HY견고딕';
+        }
+        .fw{
+            font-weight: 600;
+        }
+
+        /* 글자속성 - 정렬 */
+        .button_font{
+            font-size: 2em;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+        }
+        .button{
+            width: 150px;
+            height: 70px;
+            background-color: #ff6a00;
+            border: 10px solid #FFFFFF;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px #a9a9a9;
+        }
+        .button > a{
+            display: block;
+            line-height: 70px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 가시 속성 -->
+    <p>의미 없는 더미 객체</p>
+    <span>더미 객체</span>
+    <div id="box">대상 객체</div>
+    <span>더미 객체</span>
+    <p>의미 없는 더미 객체</p>
+    <hr>
+    <!-- 글자 속성 -->
+    <h2 style="text-align: center;">글자 크기, 글꼴 확인하기</h2>
+    <p style="font-style: italic;">글자의 크기와 글꼴을 확인해보세요.(FontSize, FontFamily)</p>
+    <div class="a">Font1 => fontsize : medium, fontfamily : Times New Roman</div>
+    <div class="b">Font2 => fontsize : x-large, fontfamily : Arial, Helvetica, sans-serif</div>
+    <div class="c">Font3 => fontsize : xx-small, fontfamily : '없는 글꼴', sans-serif</div>
+    <div class="d">Font4 => fontsize : 20px, fontfamily : '없는 글꼴', serif</div>
+    <div class="e">Font5 => 글자크기 : 좀더 크게, 글꼴 : HY견고딕</div>
+    <div class="fw">font-weight 지정</div>
+    <hr>
+    <div class="button">
+        <a href="../w6/17110097w6_1.html" target="_blank" class="button_font">Click</a>
+    </div>
+</body>
+</html>

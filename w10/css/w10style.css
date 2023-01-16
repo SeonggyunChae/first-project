@@ -1,0 +1,42 @@
+#container{
+    width: 1000px;
+    margin: 20px auto;
+}
+h1{
+    text-align: center;
+}
+.prdlist{
+    list-style: none;
+    padding: 0;
+}
+.prdlist li{
+    float: left;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.prdlist img{
+    padding: 0;
+    margin: 0;
+    float: left;
+    z-index: 1;
+}
+.prdlist .caption{
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    height: 200px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 1s ease-in-out;
+    z-index: 10;
+}
+.prdlist li:hover .caption{
+    opacity: 1;
+    transform: translateY(-200px);
+}
+.prdlist .caption h2, .prdlist .caption p{
+    color: white;
+    text-align: center;
+}

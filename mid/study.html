@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border-style: none;
+        }
+        td{
+            padding: 5px;
+        }
+        input, textarea{
+            margin-left: 10px;
+        }
+        input:enabled{
+            background-color: skyblue;
+        }
+        .rightnone{
+            border-right: none;
+        }
+        .leftnone{
+            border-left: none;
+        }
+        .noline{
+            border-style: none;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" autocomplete="off">
+        <table border="1">
+            <caption>글쓰기</caption>
+            <tr>
+                <td class="rightnone">작성자</td>
+                <td class="leftnone"><input type="text" size="10"></td>
+            </tr>
+            <tr>
+                <td class="rightnone">아이디</td>
+                <td class="leftnone"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email" placeholder="abc@abc.com" required></td>
+            </tr>
+            <tr>
+                <td>휴대폰</td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td>글제목</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td><textarea name="content" id="content" cols="12" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="noline">
+                    <div>
+                        <input type="submit" value="제출">
+                        <input type="reset" value="다시 작성">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

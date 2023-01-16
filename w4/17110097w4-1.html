@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17110097w4-1</title>
+    <style>
+        input[type="email"]{
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" autocomplete="off">
+        <!-- 상품선택 시작 -->
+        <fieldset>
+            <legend>상품선택</legend>
+            주문할 상품 선택<br>
+            <input type="checkbox" name="fruit" value="f1">사과
+            <input type="checkbox" name="fruit" value="f2">배
+            <input type="checkbox" name="fruit" value="f3">포도
+            <input type="checkbox" name="fruit" value="f4">딸기
+            <br>
+            용량 선택<br>
+            <select>
+                <option value="p3">선물용 3kg</option>
+                <option value="p5">선물용 5kg</option>
+                <option value="h3">가정용 3kg</option>
+                <option value="h5">가정용 5kg</option>
+            </select>
+        </fieldset>
+        <!-- 상품선택 끝 -->
+        <!-- 배송정보 시작 -->
+        <fieldset>
+            <legend>배송 정보</legend>
+            <table>
+                <tr>
+                    <td><label for="name">이름</label></td>
+                    <td><input type="text" id="name" name="name" size="50" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">배송 주소</label></td>
+                    <td><input type="text" id="address" name="address" size="50" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">이메일</label></td>
+                    <td><input type="email" id="email" name="email" size="50" placeholder="abc@abc.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">연락처</label></td>
+                    <td><input type="tel" id="phone" name="phone" size="50" placeholder="숫자만 입력" required></td>
+                </tr>
+                <tr>
+                    <td>배송지정</td>
+                    <td><input type="date" name="date" required> (주문일로부터 최소 3일 이후)</td>
+                </tr>
+                <tr>
+                    <td>메모</td>
+                    <td><textarea name="memo" id="memo" cols="49" rows="7" placeholder="배송 시 요청사항"></textarea></td>
+                </tr>
+            </table>
+        </fieldset><br>
+        <!-- 배송정보 끝 -->
+        <!-- 다시작성, 주문 버튼 시작 -->
+        <input type="reset" value="다시작성하기">
+        <input type="submit" value="주문하기">
+        <!-- 다시작성, 주문 버튼 끝 -->
+    </form>
+</body>
+</html>

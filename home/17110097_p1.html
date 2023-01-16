@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17110097_p1</title>
+    <link rel="stylesheet" href="css/p1style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+    </style>
+</head>
+<body>
+    <!-- 전체를 감싸는 태그 -->
+    <div id="pagewrapper">
+        <!-- 시맨틱 태그 헤더 -->
+        <header id="mainheader">
+            <img src="image/logo1.png">
+            <h1 class="mastertitle">Web Programming</h1>
+            <h2 class="masterdesc">Hompage</h2>
+        </header>
+        <!-- 내비게이션(메뉴) -->
+        <nav id="mainnavi">
+            <div class="pullleft">
+                <ul class="menu">
+                    <li class="menuitem">
+                        <span class="menutitle">HTML5</span>
+                        <ul class="submenu">
+                            <li class="submenuitem">
+                                <a href="17110097_p1.html">과제1</a>
+                            </li>
+                            <li class="submenuitem">
+                                <a href="17110097_p2.html">과제2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menuitem">
+                        <span class="menutitle">CSS3</span>
+                        <ul class="submenu">
+                            <li class="submenuitem">
+                                <a href="#">메뉴</a>
+                            </li>
+                            <li class="submenuitem">
+                                <a href="#">메뉴</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menuitem">
+                        <span class="menutitle">JavaScript</span>
+                        <ul class="submenu">
+                            <li class="submenuitem">
+                                <a href="#">메뉴</a>
+                            </li>
+                            <li class="submenuitem">
+                                <a href="#">메뉴</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 영역 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="mainsection">
+                <article>
+                    <div class="articleheader">
+                        <h1 class="articletitle" id="m1">DABI</h1>
+                    </div>
+                    <div class="articlebody">
+                        <img src="image/DABI_main.png" class="mainimg">
+                        <br><br>
+                        <p>
+                            이름&nbsp; :&nbsp; 다비, &nbsp;&nbsp;성별&nbsp; :&nbsp; 남,&nbsp;&nbsp; 무게&nbsp; :&nbsp; 2.8kg<br>
+                            출생년도&nbsp; :&nbsp; 2010.03.02(형)<br>
+                            종&nbsp; :&nbsp; 샴 발리니즈&nbsp;&nbsp;&nbsp;<br>
+                            좋아하는것&nbsp; :  <br> 
+                            &emsp;수박, 사과, 배 매우 좋아용, 따뜻한 장판
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleheader">
+                        <h1 class="articletitle" id="m2">BIBI</h1>
+                    </div>
+                    <div class="articlebody">
+                        <img src="image/BIBI_main.png" class="mainimg">
+                        <br><br>
+                        <p>
+                            이름&nbsp; :&nbsp; 비비, &nbsp;&nbsp;성별&nbsp; :&nbsp; 남,&nbsp;&nbsp; 무게&nbsp; :&nbsp; 5.8kg<br>
+                            출생년도&nbsp; :&nbsp; 2010.03.02(동생)<br>
+                            종&nbsp; :&nbsp; 샴 발리니즈&nbsp;&nbsp;&nbsp;<br>
+                            좋아하는것&nbsp; :  <br> 
+                            &emsp;게맛살, 감자튀김(그치만 못먹어용...), <br>
+                            &emsp;금, 고무줄, 비닐봉투
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <!-- 본문 우측 영역 -->
+            <aside id="mainaside">
+                <div class="asidelist">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><a href="#m1">DABI</a></li>
+                        <li><a href="#m2">BIBI</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>비비를 똑 닮은 인형!</td>
+                        </tr>
+                        <tr>
+                            <td><img src="image/aside1.png"></td>
+                        </tr>
+                        <tr>
+                            <td>꿈과 현실 사이 어딘가..</td>
+                        </tr>
+                        <tr>
+                            <td><img src="image/aside2.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>다비의 "띠용?"</td>
+                        </tr>
+                        <tr>
+                            <td><img src="image/aside3.png" alt=""></td>
+                        </tr>
+                    </table>
+                </div>
+            </aside>
+        </div>
+        <!-- 푸터 영역 -->
+        <footer id="mainfooter">
+            <a href="#">Created By TU</a>
+        </footer>
+    </div>
+    <!-- 위로 버튼 -->
+    <!-- window.scrollTo(0, 0); : 좌표값 0, 0으로 가진다(맨 위) -->
+    <div id="top" onclick="window.scrollTo(0, 0);">
+        <img src="image/top.png">
+    </div>
+    <!-- background -->
+    <img src="image/background.png" class="bgimg">
+    <div class="bgtextbox">
+        <div class="bgtext" id="t1">DABI</div>
+        <div class="bgtext" id="t2">BIBI</div>
+        <div class="bgtext" id="t3">DABI</div>
+        <div class="bgtext" id="t4">BIBI</div>
+        <div class="bgtext" id="t5">DABI</div>
+        <div class="bgtext" id="t6">BIBI</div>
+    </div>
+</body>
+</html>

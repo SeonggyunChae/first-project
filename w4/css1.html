@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 시트 적용하기1</title>
+    <style>
+        /* 전체에 스타일 지정 */
+/*         * { color: navy;} */
+        /* 특정 태그에 스타일 지정 */
+/*         h1{
+            color: red;
+            background-color: orange;
+        }
+        h2, h3, h4{
+            color: green;
+        } */
+        
+        /* 아이디 선택자 */
+        #header{
+          width: 800px;
+          margin: 0 auto;
+          background: red;
+        }
+        #wrap{
+          width: 800px;
+          margin: 0 auto;
+          /* overflow : hidden, 길이가 넘어가는 글자는 숨김 */
+          overflow: hidden;
+        }
+        #aside{
+          width: 200px;
+          /* float : left, 한줄이 다 안차면 옆으로 넘어와서 붙음 */
+          float: left;
+          background: blue;
+        }
+        #content{
+          width: 600px;
+          float: left;
+          background: green;
+        }
+    </style>
+</head>
+<body>
+  <!-- 전체 선택자, 태그 선택자 -->
+  <h1>CSS3 선택자 사용하기</h1>
+  <h3>본문글자 색 확인하기</h3>
+  <h2 style="background-color: burlywood; color: violet;">위의h3태그와 h2태그의 글자색 확인하기</h2>
+  <div>
+    h1태그를 제외한 본문의<br>
+    텍스트 색은 Navy입니다<br>
+  </div>
+  <p style="color: brown; font-size: larger;">
+    이부분의 스타일은 좀 다르네요.
+  </p>
+  <hr>
+  <!-- 아이디 선택자 -->
+  <div id="header">
+    <h1>#header 태그</h1>
+  </div>
+  <div id="wrap">
+    <div id="aside">
+      <h1>#aside 태그</h1>
+    </div>
+    <div id="content">
+      <h1>#content 태그</h1>
+    </div>
+  </div>
+</body>
+</html>

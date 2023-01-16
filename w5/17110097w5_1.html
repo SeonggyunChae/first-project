@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w5_1</title>
+    <style>
+        /* 후손 선택자 */
+        #header h2{
+            color: brown;
+        }
+
+        #section h2{
+            color: cornflowerblue;
+        }
+
+        /* 자녀 선택자 */
+        #header1 > h2{
+            color: yellowgreen;
+        }
+        #section1 > h2{
+            color: teal;
+        }
+
+        /* table밑에 tbody를 자동으로 넣어서 적용이 안된다. */
+        /* 따라서 자손보단 후손 태그를 사용하는게 편리하다. */
+        table > tr > th{
+            color: red;
+        }
+
+        /* 반응 선택자 */
+        /* 주로 a태그에 사용이 된다. */
+        h2:hover{
+            color: magenta;
+        }
+        h2:active{
+            color: lime;
+        }
+
+        /* 구조 선택자 */
+        ul{
+            overflow: hidden;
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+
+        li:first-child{
+            border-radius: 10px 0 0 10px;
+        }
+        li:last-child{
+            border-radius: 0 10px 10px 0;
+        }
+
+        li:nth-child(2n){
+            background-color: #ff6eff;
+        }
+        li:nth-child(2n+1){
+            background-color: #ffafe6;
+        }
+        
+        li:hover{
+            background-color: #fff351;
+        }
+    </style>
+</head>
+<body>
+    <!-- 후손 선택자 실습 -->
+    <div id="header">
+        <h2 class="title">후손 선택자가 적용이 되나요? : 1</h2>
+        <div id="nav">
+            <h2>후손 선택자가 적용이 되나요? : 1-1</h2>
+        </div>
+    </div>
+    <div id="section">
+        <h2 class="title">후손 선택자가 적용이 되나요? : 2</h2>
+        후손 선택자가 적용이 되나요? : 2-1
+    </div>
+    <div id="header1">
+        <h2 class="title">후손 선택자가 적용이 되나요? : 1</h2>
+        <div id="nav">
+            <h2>후손 선택자가 적용이 되나요? : 1-1</h2>
+        </div>
+    </div>
+    <div id="section1">
+        <h2 class="title">후손 선택자가 적용이 되나요? : 2</h2>
+        후손 선택자가 적용이 되나요? : 2-1
+    </div>
+    <table border="1">
+        <tr>
+            <th>이름</th>
+            <th>지역</th>
+        </tr>
+        <tr>
+            <td>윤인성</td>
+            <td>서울특별시</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- 구조 선택자 -->
+    <ul>
+        <li>첫 번째</li>
+        <li>두 번째</li>m, l;
+        <li>세 번째</li>
+        <li>네 번째</li>
+        <li>다섯 번째</li>
+        <li>여섯 번째</li>
+        <li>일곱 번째</li>
+    </ul>
+</body>
+</html>

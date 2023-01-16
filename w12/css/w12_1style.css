@@ -1,0 +1,31 @@
+#container{
+    width: 800px;
+    margin: 0 auto;
+}
+#product, #description{
+    float: left;
+}
+#product{
+    margin: 20px;
+    padding: 0;
+}
+#smallbot{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+.smallpic{
+    width: 100px;
+    height: 100px;
+}
+#description{
+    width: 400px;
+    margin-left: 20px;
+}
+h3, p{
+    color: rgb(66, 66, 66);
+}
+#smallbot img:hover{
+    /* 올렸을 때 포인ㅌ터 모양 바꾸기 */
+    cursor: pointer;
+}

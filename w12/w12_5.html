@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w12_5</title>
+    <script>
+        window.onload = function(){
+            var newopen = window.open("notice.html", "pop", "left = 300, top = 150, width = 400, height = 400");
+            if(newopen == null){
+                alert("팝업이 차단되어 있습니다. 팝업 차단을 해제해 주세요.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>window.open()을 사용하여 윈도우 열기</h3>
+    <hr>
+    <p>문서가 열리면 공지창이 열립니다.</p>
+</body>
+</html>

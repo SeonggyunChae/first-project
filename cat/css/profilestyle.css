@@ -1,0 +1,334 @@
+body{
+    /* background-color: rgb(251, 216, 0); */
+    background-color: rgb(236, 193, 0);
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* header, nav태그 */
+/* a{
+    text-decoration: none;
+    font-family: 'Bowlby One', cursive;
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 5px rgb(59, 47, 32);
+    padding: 10px 40px 10px 40px;
+    transition: 0.2s;
+}
+.main{
+    display: flex;
+    box-shadow: -40px 1px 30px gray;
+    position: fixed;
+    z-index: 3;
+    background-color: rgb(236, 193, 0);
+    border-radius: 0px 0px 25px 0px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 40px 1px 30px gray;
+    position: fixed;
+    right: 0%;
+    z-index: 3;
+    background-color: rgb(236, 193, 0);
+    border-radius: 0px 0px 0px 25px;
+}
+a:hover{
+    background-color: rgb(59, 47, 32);
+    text-shadow: 5px 5px rgb(236, 193, 0);
+    font-size: 50px;
+}
+div[class=logo]:hover{
+    background-color: rgb(59, 47, 32);
+}
+a[id=cat]:hover{
+    padding: 0px 15px 0px 14px;
+    border-radius: 0px 0px 20px 0px;
+}
+a[id=profile]:hover{
+    padding: 0px 18px 0px 17px;
+    border-radius: 0px 0px 0px 20px;
+}
+a[id=gallery]:hover{
+    padding: 0px 16px 0px 15px;
+}
+a[id=form]:hover{
+    padding: 0px 24px 0px 24px;
+} */
+/* header, nav태그 끝 */
+
+/* header, nav태그 */
+/* a{
+    text-decoration: none;
+    font-family: 'Bowlby One', cursive;
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 5px rgb(59, 47, 32);
+    padding: 10px 40px 10px 40px;
+    transition: 0.2s;
+}
+.main{
+    display: flex;
+    box-shadow: -40px 1px 30px gray;
+    position: fixed;
+    z-index: 3;
+    background-color: rgb(236, 193, 0);
+    border-radius: 0px 0px 25px 0px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 40px 1px 30px gray;
+    position: fixed;
+    right: 0%;
+    z-index: 3;
+    background-color: rgb(236, 193, 0);
+    border-radius: 0px 0px 0px 25px;
+}
+a:hover{
+    background-color: rgb(59, 47, 32);
+    text-shadow: 5px 5px rgb(236, 193, 0);
+    font-size: 50px;
+}
+div[class=logo]:hover{
+    background-color: rgb(59, 47, 32);
+}
+a[id=cat]:hover{
+    padding: 0px 15px 0px 14px;
+    border-radius: 0px 0px 20px 0px;
+}
+a[id=profile]:hover{
+    padding: 0px 18px 0px 17px;
+    border-radius: 0px 0px 0px 20px;
+}
+a[id=gallery]:hover{
+    padding: 0px 16px 0px 15px;
+}
+a[id=form]:hover{
+    padding: 0px 24px 0px 24px;
+} */
+/* header, nav태그 끝 */
+
+/* header, nav태그 */
+.main{
+    position: fixed;
+    display: flex;
+    box-shadow: -40px 1px 30px gray;
+    background-color: rgb(236, 193, 0);
+    border-radius: 0px 0px 25px 0px;
+    z-index: 3;
+}
+.fix{
+    position: fixed;
+    right: 0%;
+    box-shadow: 40px 1px 30px gray;
+    background-color: rgb(236, 193, 0);
+    border-radius: 0px 0px 0px 25px;
+    z-index: 3;
+}
+.menu{
+    position: relative;
+    display: inline-block;
+    height: 72px;
+    padding: 10px 40px 0px 25px;
+    text-decoration: none;
+    font-family: 'Bowlby One', cursive;
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 5px rgb(59, 47, 32);
+    transition: 0.2s;
+}
+.mlist{
+    position: absolute;
+    display: none;
+    text-align: right;
+    right: 0%;
+    margin-top: 20px;
+    border-radius: 25px 0px 0px 25px;
+    width: 280px;
+}
+.mlist a{
+    border-radius: 25px 0px 0px 25px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Bowlby One', cursive;
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 5px rgb(59, 47, 32);
+    padding: 10px 40px 10px 40px;
+    transition: 0.2s;
+}
+.menu:hover{
+    box-shadow: 40px 1px 30px black;
+    background-color: rgb(59, 47, 32);
+    text-shadow: 5px 5px rgb(236, 193, 0);
+    transform: scale(1.2, 1.5);
+    border-radius: 25px 0px 0px 25px;
+    padding: 20px 40px 0px 30px;
+}
+.menu:hover .mlist{
+    display: block;
+    box-shadow: 40px 1px 30px gray;
+    background-color: rgb(236, 193, 0);
+}
+a:hover{
+    background-color: rgb(59, 47, 32);
+    text-shadow: 5px 5px rgb(236, 193, 0);
+    transform: scale(1.2, 1.5);
+}
+a[id=cat]:hover{
+    padding: 20px 30px 10px 40px;
+    border-radius: 0px 0px 20px 0px;
+    box-shadow: -40px 1px 30px black;
+}
+a[id=profile]:hover{
+    padding: 0px 40px 0px 20px;
+}
+a[id=gallery]:hover{
+    padding: 0px 40px 0px 20px;
+}
+a[id=form]:hover{
+    padding: 0px 40px 0px 20px;
+}
+/* header, nav태그 끝 */
+
+/* section, article태그 */
+#box_btn_DABI{
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    top: 20%;
+    left: 20%;
+    border-radius: 100px;
+    /* background-color: rgb(246, 232, 214); */
+    /* background-color: rgb(195, 165, 139); */
+    background-color: rgb(228, 200, 152);
+    box-shadow: -10px 10px rgb(59, 47, 32);
+    border: solid 3px rgb(59, 47, 32);
+    transition: 1s ease-out;
+}
+#btn_DABI{
+    width: 300px;
+    margin-left: 60px;
+    margin-top: 20px;
+    filter: drop-shadow(-5px 5px rgb(59, 47, 32));
+}
+#box_btn_BIBI{
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    top: 20%;
+    left: 60%;
+    border-radius: 100px;
+    background-color: rgb(228, 200, 152);
+    box-shadow: 10px 10px rgb(59, 47, 32);
+    border: solid 3px rgb(59, 47, 32);
+    transition: 1s ease-out;
+}
+#btn_BIBI{
+    width: 250px;
+    margin-left: 60px;
+    margin-top: 20px;
+    filter: drop-shadow(5px 5px rgb(59, 47, 32));
+}
+.idcard{
+    position: absolute;
+    width: 900px;
+    height: 550px;
+    background-color: white;
+    top: 18%;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 50px;
+    border-radius: 50px;
+    line-height: 80px;
+    color: rgb(59, 47, 32);
+    background-color: rgb(228, 200, 152);
+    border: solid 3px rgb(59, 47, 32);
+    font-weight: bold;
+}
+.pbox{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card_DABI{
+    margin-left: 2000px;
+    transition: 1s;
+    z-index: 3;
+    box-shadow: 10px 10px rgb(59, 47, 32);
+}
+#box_btn_DABI:hover{
+    transform: scale(1.2);
+    left: 13%;
+}
+#box_btn_DABI:hover + #card_DABI{
+    transform: translateX(-1170px);
+}
+#card_BIBI{
+    margin-left: -1000px;
+    transition: 1s;
+    z-index: 3;
+    box-shadow: -10px 10px rgb(59, 47, 32);
+}
+#box_btn_BIBI:hover{
+    transform: scale(1.2);
+    left: 67%;
+}
+#box_btn_BIBI:hover + #card_BIBI{
+    transform: translateX(1200px);
+}
+#focus{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 27%;
+    left: 40%;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    animation-name: focus_move;
+    animation-duration: 2.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+#focus::before{
+    content: "←";
+    font-size: 90px;
+    font-family: 'Gamja Flower', cursive;
+    text-align: center;
+}
+#focus::after{
+    content: "→";
+    font-size: 90px;
+    font-family: 'Gamja Flower', cursive;
+    text-align: center;
+}
+@keyframes focus_move{
+    to{
+        transform: scale(1.2);
+    }
+}
+/* section, article태그 끝 */
+
+/* footer태그 */
+.foot{
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    background-color: rgb(59, 47, 32);
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Gamja Flower', cursive;
+    box-shadow: 0px 5px 30px black inset;
+}
+/* footer태그 끝 */

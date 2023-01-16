@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w12_3</title>
+    <style>
+        @import url(css/w12_3style.css);
+    </style>
+    <script>
+        window.onload = function(){
+            var color = ['green', 'orange', 'navy', 'lightgray'];
+            var lists = document.querySelectorAll('li');
+            for(var i = 0; i < lists.length; i++){
+                var li = lists[i];
+                li.style.backgroundColor = color[i];
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <ul>
+            <li><a href="#" onclick="changeBgColor('green')">Green</a></li>
+            <li><a href="#" onclick="changeBgColor('orange')">Orange</a></li>
+            <li><a href="#" onclick="changeBgColor('navy')">Navy</a></li>
+            <li><a href="#" onclick="changeBgColor('white')">White</a></li>
+        </ul>
+        <div id="result"></div>
+        <script src="js/w12_3script.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.container{
+    width: 1080px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+.left{
+    float: left;
+    width: 740px;
+    height: 428px;
+    background-color: #6799FF;
+}
+.right{
+    float: right;
+    width: 332px;
+    height: 428px;
+    background-color: #6233a3;
+}
+
+.menu{
+    float: left;
+    padding: 8px 0;
+    background-color: lightblue;
+}
+.menu > li{
+    list-style: none;
+    float: left;
+    padding: 0 8px;
+}
+
+.weather{
+    float: right;
+    padding: 8px 0;
+    background-color: lightseagreen;
+}
+.weather > li{
+    list-style: none;
+}
+
+.footer{
+    background-color: #CEFBC9;
+    height: 80px;
+}

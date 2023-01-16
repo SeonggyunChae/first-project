@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학과공지</title>
+    <link rel="stylesheet" href="css/17110097notice.css">        
+    <script>
+        window.onload = function(){
+            var btn1 = document.getElementById('open');
+
+            btn1.onclick = function(){
+                document.getElementById('desc').style.display = "block";
+                document.getElementById('open').style.display = "none";
+            };
+        }
+    </script>
+</head>
+<body>
+    <div id="item">
+        <img src="image/com.png" width="400px" height="300px">
+        <button class="over" id="open">
+            설명보기 
+        </button>                
+        <div class="content" id="desc">
+            <h4> 동명대 컴퓨터 공학과</h4>
+            <p class="explain"> 
+                4차 산업혁명은 빅데이터와 사물인터넷, 인공지능, 자율주행, <br>
+                가상현실 등 첨단 정보통신 기술들이 주도하는 차세대 산업<br>
+                혁명으로서 경제와 사회 전반에 융합되어 전 세계의 산업 <br>
+                환경과 질서에 혁신적인 변화를 유발하고 있다.
+            </p>
+            <p id="cp"> [출처 ] 동명대학교 컴퓨터공학부  / [이미지 출처] 동명대학교 </p>
+        </div>       
+    </div>
+    <div align="center">
+        <button class="winclose" onclick="window.close()">창 닫기</button>
+    </div>    
+</body>
+</html>

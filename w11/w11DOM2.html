@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w11DOM2</title>
+    <script>
+        // window.onload = function(){
+        //     /* var header = document.getElementById("header"); */
+        //     /* querySelector : 하나만 적용이 된다. 여러개 있어도 하나만 */
+        //     /* .클래스이름, #id이름 다 사용 가능 */
+        //     /* var header = document.querySelector('h1'); */
+        //     var header = document.querySelectorAll('h1');
+
+        //     for(var i = 0; i < headers.length; i++){
+        //         var header = headers[i];
+
+        //         header.style.color = 'orange';
+        //         header.style.backgroundColor = 'red';
+        //         /* innerHTML : 기존에 있던 내용을 바꾸는 것 */
+        //         header.innerHTML = "From JavaScript";
+        //     }
+        // }
+        window.onload = function(){
+            var output = '';
+            for(var i = 0; i < 256; i++){
+                output += '<div></div>';
+            }
+            document.body.innerHTML = output;
+            var divs = document.querySelectorAll('div');
+            for(var i = 0; i < divs.length; i++){
+                var div = divs[i];
+                div.style.height = '2px';
+                div.style.background = 'rgb(' + i + ',' + i + ',' + i + ')';
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1 id="header">문서 객체 선택</h1>
+    <h1>문서 객체 선택</h1>
+</body>
+</html>

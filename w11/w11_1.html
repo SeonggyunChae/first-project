@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w11_1</title>
+    <script>
+        /* alert('Hello JavaScript..!'); */
+
+        /* var radius = 10;
+        var pi = 3.14159265;
+        alert(2 * radius * pi); */
+
+        var date = new Date();
+
+        var year = date.getFullYear();
+        var month = date.getMonth() +1;
+        var day = date.getDate();       //일(1, 2...)
+        var day1 = date.getDay();       //요일(월~금 -> 0~6)
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+
+        var ampm;
+        if(hours < 12){
+            ampm = '오전 ';
+        }
+        else{
+            ampm = '오후 '; 
+            hours -= 12;
+        }
+        document.write(year + '년 ' + month + '월 ' + day + '일 ' + ampm + hours + '시 ' + minutes + '분 ' + seconds + '초');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

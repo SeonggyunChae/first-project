@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="css/indexstyle.css">
+</head>
+<body>
+    <!-- 전체를 감싸는 태그 -->
+    <div id="pagewrapper">
+        <!-- 시맨틱 태그 헤더 -->
+        <header id="mainheader">
+            <img src="image/logo1.png">
+            <h1 class="mastertitle">Web Programming</h1>
+            <h2 class="masterdesc">Hompage</h2>
+            <nav id="member">
+                <ul>
+                    <li><a href="member.html">회원가입</a></li>
+                    <li><a href="17110097login.html">로그인</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 내비게이션(메뉴) -->
+        <nav id="mainnavi">
+            <div class="pullleft">
+                <ul class="menu">
+                    <li class="menuitem">
+                        <span class="menutitle">HTML5</span>
+                        <ul class="submenu">
+                            <li class="submenuitem">
+                                <a href="17110097_p1.html">과제1</a>
+                            </li>
+                            <li class="submenuitem">
+                                <a href="17110097_p2.html">과제2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menuitem">
+                        <span class="menutitle">CSS3</span>
+                        <ul class="submenu">
+                            <li class="submenuitem">
+                                <a href="17110097fin.html">TU</a>
+                            </li>
+                            <li class="submenuitem">
+                                <a href="#">메뉴</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menuitem">
+                        <span class="menutitle">JavaScript</span>
+                        <ul class="submenu">
+                            <li class="submenuitem">
+                                <a href="#">메뉴</a>
+                            </li>
+                            <li class="submenuitem">
+                                <a href="#">메뉴</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pullright">
+                <div class="searchbar">
+                    <form method="post">
+                        <input type="search" class="inputsearch">
+                        <input type="submit" class="inputsubmit" value="검색">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- 본문 영역 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="mainsection">
+                <article>
+                    <div class="articleheader">
+                        <h1 class="articletitle">Web</h1>
+                        <p class="articlesource">날짜 : 2021년 11월 30일 (출처 : 한빛아카데미)</p>
+                    </div>
+                    <div class="articlebody">
+                        <img src="https://via.placeholder.com/300">
+                        <br><br>
+                        <p>웹은 인터넷 공간에서 제공하는 서비스이다.<br>
+                            영국의 컴퓨터 과학자 팀 버너스리가 1989년 인터넷에서 문서 사이를
+                            쉽게 이동할 수 있는 하이퍼 링크를 제안하였고, 1991년 웹을 발표하였다.<br>
+                            팀 버너스리는 1993년 웹 소스 코드를 무료로 공개하였으며, 이후 자신이 고안해낸 여러 기술들을 특허를 
+                            내지 않고 무료로 공개하고 1994년 W3C(World Wide Web Consortium)을 창설하여 인터넷이 더 빠르게 발전
+                            하는데 큰 기여를 하였다.  
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleheader">
+                        <h1 class="articletitle">HTML5</h1>
+                        <p class="articlesource">날짜 : 2021년 11월 30일 (출처 : 한빛아카데미)</p>
+                    </div>
+                    <div class="articlebody">
+                        <img src="https://via.placeholder.com/300">
+                        <br><br>
+                        <p>웹 표준 기술을 총칭하며 CSS3와 JavaScript를 모두 포함한다.<br>
+                            작은 의미로는 웹 페이지를 구성하는 HTML 마크업 언어 자체이다. 애플리케이션 수준의 웹 페이지를 만들 수 있고, 
+                            데스크탑 애플리케이션을 만들 수 있으며 리액트 네이티브를 사용해 모바일 애플리케이션을 만들 수 있다. 
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <div class="articleheader">
+                        <h1 class="articletitle">CSS3</h1>
+                        <p class="articlesource">날짜 : 2021년 11월 30일 (출처 : 위키백과)</p>
+                    </div>
+                    <div class="articlebody">
+                        <img src="https://via.placeholder.com/300">
+                        <br><br>
+                        <p> 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어(style sheet languange)로 HTML과 XHTML에 주로 쓰이며,
+                            W3C의 표준이다. 마크업 언어가 웹 사이트의 몸체를 담당한다면 CSS는 옷과 액세사리처럼 꾸미는 역할을 담당한다고
+                            할 수 있다. <br> 
+                            CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 
+                            추가되었다.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <!-- 본문 우측 영역 -->
+            <aside id="mainaside">
+                <div class="asidelist">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><a href="#">C1</a></li>
+                        <li><a href="#">C2</a></li>
+                        <li><a href="#">C3</a></li>
+                        <li><a href="#">C4</a></li>
+                        <li><a href="#">C5</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>CSS3</td>
+                        </tr>
+                        <tr>
+                            <td><img src="image/html.jpg" id="pic1"></td>
+                            <td><img src="image/css.jpg" id="pic2"></td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><img src="image/js.jpg" id="pic3"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>출처 : 위키백과</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </aside>
+        </div>
+        <!-- 푸터 영역 -->
+        <footer id="mainfooter">
+            <a href="#">Created By TU</a>
+        </footer>
+    </div>
+    <!-- 위로 버튼 -->
+    <!-- window.scrollTo(0, 0); : 좌표값 0, 0으로 가진다(맨 위) -->
+    <div id="top" onclick="window.scrollTo(0, 0);">
+        <img src="image/top.png">
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(236, 193, 0);
+    margin: 0;
+}
+
+/* header, nav태그 */
+.main{
+    position: fixed;
+    display: flex;
+    box-shadow: -40px 1px 30px gray;
+    background-color: rgb(236, 193, 0);
+    border-radius: 0px 0px 25px 0px;
+    z-index: 3;
+}
+.fix{
+    position: fixed;
+    right: 0%;
+    box-shadow: 40px 1px 30px gray;
+    background-color: rgb(236, 193, 0);
+    border-radius: 0px 0px 0px 25px;
+    z-index: 3;
+}
+.menu{
+    position: relative;
+    display: inline-block;
+    height: 72px;
+    padding: 10px 40px 0px 25px;
+    text-decoration: none;
+    font-family: 'Bowlby One', cursive;
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 5px rgb(59, 47, 32);
+    transition: 0.2s;
+}
+.mlist{
+    position: absolute;
+    display: none;
+    text-align: right;
+    right: 0%;
+    margin-top: 20px;
+    border-radius: 25px 0px 0px 25px;
+    width: 280px;
+}
+.mlist a{
+    border-radius: 25px 0px 0px 25px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Bowlby One', cursive;
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 5px rgb(59, 47, 32);
+    padding: 10px 40px 10px 40px;
+    transition: 0.2s;
+}
+.menu:hover{
+    box-shadow: 40px 1px 30px black;
+    background-color: rgb(59, 47, 32);
+    text-shadow: 5px 5px rgb(236, 193, 0);
+    transform: scale(1.2, 1.5);
+    border-radius: 25px 0px 0px 25px;
+    padding: 20px 40px 0px 30px;
+}
+.menu:hover .mlist{
+    display: block;
+    box-shadow: 40px 1px 30px gray;
+    background-color: rgb(236, 193, 0);
+}
+a:hover{
+    background-color: rgb(59, 47, 32);
+    text-shadow: 5px 5px rgb(236, 193, 0);
+    transform: scale(1.2, 1.5);
+}
+a[id=cat]:hover{
+    padding: 20px 30px 10px 40px;
+    border-radius: 0px 0px 20px 0px;
+    box-shadow: -40px 1px 30px black;
+}
+a[id=profile]:hover{
+    padding: 0px 40px 0px 20px;
+}
+a[id=gallery]:hover{
+    padding: 0px 40px 0px 20px;
+}
+a[id=form]:hover{
+    padding: 0px 40px 0px 20px;
+}
+/* header, nav태그 끝 */

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w12_4</title>
+    <style>
+        @import url(css/w12_4style.css);
+    </style>
+    <script>
+        window.onload = function(){
+            var btn1 = document.getElementById('open');
+
+            btn1.onclick = function(){
+                document.getElementById('desc').style.display = "block";
+                    document.getElementById('open').style.display = "none";
+            };
+
+            var btn2 = document.getElementById('close');
+            btn2.onclick = function(){
+                document.getElementById('desc').style.display = "none";
+                document.getElementById('open').style.display = "block";
+            };
+        };
+    </script>
+</head>
+<body>
+    <div id="item">
+        <img src="image/shine.png">
+        <button id="open" class="over" onclick="showDetail()">상세 설명 보기</button>
+        <div id="desc" class="detail">
+<!--             <script>
+                function showDetail(){
+                    document.getElementById('desc').style.display = "block";
+                    document.getElementById('open').style.display = "none";
+                };
+
+                function hideDetail(){
+                    document.getElementById('desc').style.display = "none";
+                    document.getElementById('open').style.display = "block";
+                };
+            </script> -->
+            <h4>샤인 머스캣</h4>
+            <p>
+                일본에서 1988년 스튜벤(Steuben: V. labruscana)과 알렉산드리아(Muscat of Alexandria: V. vinifera)를 이종 교배하여 만든 ‘아끼즈21호(Akitsu-21)’와, ‘하쿠난(Hakunan: V. vinifera)’을 인공 교배하여 만든 청포도의 일종이다. 일본종자단속법(Seed Act of Japan)에 따라 2006년 품종 등록하였으며, 일본 오카야마현의 특산품으로 인기가 높다.
+                
+                한국에서는 2006년에 처음으로 식재(植栽)되었으며, 2012년 이후 로열티 없이도 재배 및 수출할 수 있는 정식 권리를 획득하였다. 샤인머스캣은 일본산과 한국산의 품질 차이가 없으며, 이 품종의 수출 국가 또한 한국과 일본이 유일하다. 일반 거봉 포도에 비해 수출 가격이 약 3배 이상 높은 고급 포도이다. 국내에서는 2017년 기준 전국 재배 면적 약 800 ha로, 1.2만톤을 생산하여, 그중 300톤을 중국, 홍콩, 대만, 싱가폴, 인도네시아, 베트남 등으로 수출하였다. 국내에서는 샤인머스캣의 최초 재배지기도 한 경상북도에서 재배가 집중적으로 이루어지며, 상주, 김천과 같은 기존 포도 주산지를 중심으로 재배 면적이 급속하게 증가하고 있는 추세이다.
+            </p>
+            <p id="cp">
+                [출처 : 네이버 지식백과] 샤인머스캣 [Shine Muscat] (두산백과) / [이미지 출처] SPC MAGAZINE
+            </p>
+            <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+        </div>
+    </div>
+</body>
+</html>

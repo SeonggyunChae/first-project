@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 460px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -230px;
+    margin-left: -200px;
+}
+#contents{
+    width: 450px;
+    height: 300px;
+    border: 4px double black;
+    overflow: hidden;
+    position: relative;
+}
+h1{
+    text-align: center;
+}
+.circle{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+}
+#cir1{
+    background-color: brown;
+    left: 15px;
+    top: 15px;
+}
+#cir2{
+    background-color: cadetblue;
+    right: 15px;
+    top: 15px;
+}
+#cir3{
+    background-color: yellowgreen;
+    left: 15px;
+    bottom: 15px;
+}
+#cir4{
+    background-color: darkslateblue;
+    right: 15px;
+    bottom: 15px;
+}

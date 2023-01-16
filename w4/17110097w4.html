@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17110097w4</title>
+    <style>
+        /* 속성 선택자 */
+        input[type="text"]{
+            background: red;
+        }
+        input[type="password"]{
+            background: blue;
+        }
+
+        /* 클래스 선택자 */
+        .userInfo, .event{
+            width: 500px;
+        }
+
+        /* 상태 선택자 */
+        /* 위에서 작성한 속성선택자는 들어가지 않음 */
+        /* input 태그가 사용 가능할 때 배경색 지정 */
+        input:enabled{
+            background-color: palegoldenrod;
+        }
+        /* input 태그가 포커스에 있을 때 배경색 지정 */
+        input:focus{
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원 가입</h1>
+    <form method="post" autocomplete="off">
+        <!-- 사용자 정보 시작 -->
+        <fieldset class="userInfo">
+            <legend>사용자 정보</legend>
+            <ul>
+                <li>
+                    <label for="id">아이디</label>
+                    <input type="text" id="id" name="id" size="40" maxlength="15" placeholder="공백없이 4자~15자 사이 영숫자">
+                </li>
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" size="40">
+                </li>
+                <li>
+                    <label for="pwd">비밀번호</label>
+                    <input type="password" id="pwd" name="pwd" size="40" maxlength="15" placeholder="문자와 숫자, 특수문자 포함 9자~15자 이내">
+                </li>
+                <li>
+                    <label for="pwdCheck">비밀번호 확인</label>
+                    <input type="password" id="pwdCheck" name="pwdCheck" size="40" maxlength="15">
+                </li>
+            </ul>
+        </fieldset>
+        <!-- 사용자 정보 끝 -->
+        <!-- 이벤트와 새로운 소식 시작 -->
+        <fieldset class="event">
+            <legend>이벤트와 새로운 소식</legend>
+            <input type="radio" name="mail" value="mailY" checked>메일 수신
+            <input type="radio" name="mail" value="mailN">메일 수신 안함
+        </fieldset><br>
+        <!-- 이벤트와 새로운 소식 끝 -->
+        <!-- 취소, 제출 버튼 -->
+        <input type="reset" value="취소">&nbsp;
+        <input type="submit" value="제출">
+        <!-- 취소, 제출 버튼 끝 -->
+    </form>
+</body>
+</html>
